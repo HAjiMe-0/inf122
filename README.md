@@ -2,4 +2,5 @@ NOMBRE: Harold Ruddy Quispe Hilari
 
 MATERIA: INF-122
 
-color favorito #FFFFFF
+color favorito #FFFFFF 
+uwu
