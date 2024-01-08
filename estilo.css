@@ -1,7 +1,16 @@
 body{
-    background-color: #fcd8aa;
+    font-family: 'nunito';
+    margin: 0;
 }
-h1{
-    color: #dff6ff;
-    text-align: center;
+:root{
+    --white:#FFFFFF;
+    ---black: #000;
+    --purple:#6F2CFF;
+    --light-ourple: #EFE9F9;
+    --red-heart: #A50954;
+    --blue-heart:#2C67FF;
+    --sm:14px;
+    --md:20px;
+    --ig:60px;
+
 }
