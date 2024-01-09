@@ -1,0 +1,23 @@
+body{
+    background-color: var(--gray);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+}
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray:#2B2E34;
+    --yellow: #D1AE31 ;
+    --gray-blue: #0d1423;
+    --clear-gray: #afc0e2;
+    --sm:14px;
+    --md:20px;
+    --lg:60px;
+}
+
+.title{
+    color: var(--black);
+    text-align: center;
+    font-size: var(--lg);
+}

@@ -93,7 +93,16 @@ body{
     margin: 0;
 }
 @media (max-width: 720px){
+    .primary-button{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .brochure p{
+        font-size: 0;
+    }
     .icons-container{
+        
         grid-template-columns: repeat(1,1fr);
         margin: 50px 1px 50px 10px;
     }
