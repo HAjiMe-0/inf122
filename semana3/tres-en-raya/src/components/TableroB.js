@@ -15,10 +15,12 @@ function TableroB() {
     const [cuadros, setCuadros] = useState(Array(9).fill(null));
     const [jugador, setJugador] = useState("O");
     const click = (i) => {
+            console.log("pos: "+i);
+            console.log("turno: ", jugador);
             const cuadrosTemp = [...cuadros];
             cuadrosTemp[i] = jugador;
             setCuadros(cuadrosTemp);
-            console.log(cuadrosTemp);
+            console.log("array", cuadrosTemp);
            // if (jugador === "X") {
              //   setJugador("O");
             //} else {
@@ -41,7 +43,7 @@ function TableroB() {
             <CuadroB valor={cuadros[6]} funcion={() => click(6)} />
             <CuadroB valor={cuadros[7]} funcion={() => click(7)} />
             <CuadroB valor={cuadros[8]} funcion={() => click(8)} />
-        </div>
+            </div>
         </div>
         
 
