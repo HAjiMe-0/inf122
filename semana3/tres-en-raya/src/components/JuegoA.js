@@ -1,8 +1,8 @@
 import React from 'react';
-import '../style/Juego.css';
 import Historial from './Historial';
 import TableroD from './TableroD';
 import { useState } from 'react';
+import '../style/Historial.css'
 
 function Juego() {
     const [historial, setHistorial] = useState([

@@ -1,0 +1,14 @@
+.historial {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.juego-tablero {
+    display: flex;
+    flex-direction: column;
+}
+
+.juego {
+    display: flex;
+    
+}
