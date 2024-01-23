@@ -2,7 +2,8 @@ import React from 'react';
 import Historial from './Historial';
 import TableroD from './TableroD';
 import { useState } from 'react';
-import '../style/Historial.css'
+import '../style/Juego.css'
+
 
 function Juego() {
     const [historial, setHistorial] = useState([
@@ -32,11 +33,29 @@ function Juego() {
             setGanador(calcularGanador(cuadros));
         }
     }
-    const saltarA = (movimiento) => {
+    /*const saltarA = (movimiento) => {
         console.log("movimiento", movimiento);
         setNroMovimiento(movimiento);
         setJugador(jugador === "X" ? "O" : "X");
 
+    }*/
+//en este const "saltarA se modifica Reinicio del juego al estado inicial 
+// y Corrige el estado del turno del jugador al retroceder"
+    const saltarA = (movimiento) => {
+         // Reiniciar el juego al estado inicial
+        if (movimiento === 0) {
+            setHistorial([{
+                cuadros: Array(9).fill(null)
+            }]);
+            setCuadros(Array(9).fill(null));
+            setGanador(null);
+        } else {
+            setHistorial(historial.slice(0, movimiento + 1));
+        }
+        // basandonos en que si "X" es par y "O" es impar 
+        console.log("movimiento", movimiento);
+        setNroMovimiento(movimiento);
+        setJugador((movimiento % 2) === 0 ? "X" : "O");
     }
     const movimientoActual = historial[nroMovimiento];
     return (
