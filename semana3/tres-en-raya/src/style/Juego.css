@@ -5,4 +5,9 @@
 
 .juego {
     display: flex;
+    align-content: space-evenly;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+    width: 30%;
 }
