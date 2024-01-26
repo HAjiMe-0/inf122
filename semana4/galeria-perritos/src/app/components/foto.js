@@ -21,6 +21,7 @@ function Foto (){
         <div className={style.contenedor}>
             <Image src={perrito} alt="perrito" width={500} height={500} />
             <h1>{estado}</h1>
+            <h1>{habilidad}</h1>
         </div>
     )
 }
